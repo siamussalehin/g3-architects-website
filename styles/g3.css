@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+.banner-img{
+    width: 100%;
+}
+
 /* shared styles */
 .display-flex{
     display: flex;
@@ -31,7 +35,7 @@
 
 
 /* dark03 */
-.text-light-grey{
+.text-light-gray{
 color: #727272;
 }
 
@@ -101,6 +105,7 @@ font-size: 4rem;
 
 .banner-img{
     max-width: 100%;
+    max-width: 1320px;
 }
 
 /* Team and Feature related styles */
@@ -122,11 +127,61 @@ font-size: 4rem;
     font-weight: 500;
 }
 
+/* features related styles */
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+}
+
+.feature-card{
+
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+margin-bottom: 20px;
+max-width: 580px;
+}
+
+
+.feature-card .feature-title{
+font-weight: 600;
+font-size: 1.25rem;
+}
+
+div >img{
+    margin-left: 60px;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-top: -100px
+    
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.img{
+    margin-left: 150px;
+    width: 100%;
+}
+
+
 /* Some Fact Related Styles */
+
+
+    
+
 
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
 }
 
 .fact-card{
@@ -137,7 +192,6 @@ font-size: 4rem;
     text-align: center;
     align-items: center;
     justify-content: center;
-    
     
 }
 
@@ -158,7 +212,14 @@ font-size: 4rem;
     max-width: 540px;
 }
 
+.fact-img{
+    margin: 0 auto;
+}
+
 /* Sponsor Related Styles */
+
+
+
 .sponsor-info{
     max-width: 540px;
     margin: 50px auto;
@@ -171,14 +232,27 @@ font-size: 4rem;
 }
 
 .sponsor-companies img{
-    filter: grayscale(100%);
+    filter: grayscale(100%);    
+}
+
+/* footer-section */
+.footer{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    
+    padding-top: 38px;
+    padding-bottom: 39px;
+    width: 1440px;
+    
+    margin: 130px auto;
 }
 
 
 /* Responsive media query */
 
 @media screen and (max-width: 576px) {
-    .navbar,.nav-links,.teams{
+    .navbar,.nav-links,.teams,.features{
         flex-direction: column;
     }
     .team-img-container,
@@ -200,12 +274,23 @@ font-size: 4rem;
 
 .our-features{
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 40px;   
+}
+#experience-badge{
+    margin-top: 20px;
+    margin-left: -20px;
     
 }
-
+.img{
+    margin-left: -50px;
+}
+.banner-img{
+    margin-left: 0;
+}
 
 }
+
+
 
 /* medium tablet devices */
 
